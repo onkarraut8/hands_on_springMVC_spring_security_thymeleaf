@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmln:th="http://www.thymeLeaf.org"
+	th:replace="normal/base::Layout(~{::section})">
+
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+
+<body>
+	<section>
+
+		<div class="container card vh-100">
+			<div class="card-body">
+				<h1 class="text-center"></h1>
+				<table class="table table-sm">
+					<thead>
+						<tr>
+							<!-- <th scope="col">#</th>
+                              <th scope="col">First</th>
+                              <th scope="col">Last</th>
+                              <th scope="col">Handle</th>-->
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th style="font-size: 25px; font-weight: 500;" scope="row">Name</th>
+							<td><span style="font-size: 25px;" th:text="${user.name}"></span></td>
+
+
+						</tr>
+						<tr>
+							<th style="font-size: 25px; font-weight: 500;" scope="row">Email</th>
+							<td><span style="font-size: 25px;" th:text="${user.email}"></span></td>
+
+						</tr>
+						<tr>
+							<th style="font-size: 25px; font-weight: 500;" scope="row">Role</th>
+							<td><span style="font-size: 25px;" th:text="${user.role}"></span></td>
+
+						</tr>
+						<tr>
+							<th style="font-size: 25px; font-weight: 500;" scope="row">About</th>
+							<td><span style="font-size: 25px;" th:text="${user.about}"></span></td>
+
+						</tr>
+						</tr>
+						<tr>
+							<th style="font-size: 25px; font-weight: 500;" scope="row">Active</th>
+							<td><span style="font-size: 25px;" th:text="${user.enabled}"></span></td>
+
+						</tr>
+
+
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</section>
+
+</body>
+
+</html>
